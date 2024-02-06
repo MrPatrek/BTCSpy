@@ -3,7 +3,7 @@
 
 The application is built on the top of .NET 8 (ASP.NET Core 8).
 
-Solution consists of two **main** independent programs: `BTCSpyConsoleApp` (console-mode application) and `BTCSpy` (Web API), as well as `BTCSpy`'s class libriaries and xUnit test project. Both perform the same task, only the "UI" differs.
+Solution consists of two **main** independent programs: `BTCSpyConsoleApp` (console-mode application) and `BTCSpy` (Web API), as well as `BTCSpy`'s dependencies (class libraries) and xUnit test project. Both perform the same task, only the "UI" differs.
 
 ## How to run it?
 - Option #1: native console-mode application and/or Web API:
