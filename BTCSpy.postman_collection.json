@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "fd34dde2-a4e9-4115-8c85-351dd6b7c346",
+		"name": "BTCSpy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28222113"
+	},
+	"item": [
+		{
+			"name": "GET Best Price Orders: Buy 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy?type=Buy&btcAmount=5",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Buy"
+						},
+						{
+							"key": "btcAmount",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Best Price Orders: Sell 15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy?type=Sell&btcAmount=15",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Sell"
+						},
+						{
+							"key": "btcAmount",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Best Price Orders (no params)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Buy",
+							"disabled": true
+						},
+						{
+							"key": "btcAmount",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Best Price Orders (invalid type)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy?type=SomethingElse&btcAmount=5",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "SomethingElse"
+						},
+						{
+							"key": "btcAmount",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Best Price Orders (invalid btcAmount #1)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy?type=Buy&btcAmount=SomeStringHere",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Buy"
+						},
+						{
+							"key": "btcAmount",
+							"value": "SomeStringHere"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Best Price Orders (invalid btcAmount #2)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{btcSpyBaseUrl}}api/btcspy?type=Buy&btcAmount=0",
+					"host": [
+						"{{btcSpyBaseUrl}}api"
+					],
+					"path": [
+						"btcspy"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Buy"
+						},
+						{
+							"key": "btcAmount",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "btcSpyBaseUrl",
+			"value": "https://localhost:8081/",
+			"type": "string"
+		}
+	]
+}
