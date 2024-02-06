@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+**/global.json
+**/Dockerfile*
+**/.dockerignore*
+**/*.user
+**/.vs/
+
+
+
+**/.git/
+**/.github/
+**/.gitattributes*
+**/.gitignore*
