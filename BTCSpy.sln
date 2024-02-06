@@ -21,10 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BTCSpyConsoleApp", "BTCSpyConsoleApp\BTCSpyConsoleApp.csproj", "{7DE1A4DC-CC29-41D4-9A91-CBBF829D58D3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD62C628-2007-4BB9-A499-DEDB8B323140}"
-	ProjectSection(SolutionItems) = preProject
-		OrderBooksSeed.json = OrderBooksSeed.json
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{88DF66C2-2C64-47A9-B758-93173F68131F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +65,10 @@ Global
 		{7DE1A4DC-CC29-41D4-9A91-CBBF829D58D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DE1A4DC-CC29-41D4-9A91-CBBF829D58D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DE1A4DC-CC29-41D4-9A91-CBBF829D58D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DF66C2-2C64-47A9-B758-93173F68131F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DF66C2-2C64-47A9-B758-93173F68131F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DF66C2-2C64-47A9-B758-93173F68131F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DF66C2-2C64-47A9-B758-93173F68131F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

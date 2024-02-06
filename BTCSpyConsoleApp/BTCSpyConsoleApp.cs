@@ -103,7 +103,7 @@ namespace BTCSpyConsoleApp
 
         private void ReadOrderBooks()
         {
-            string orderBooksDataStr = File.ReadAllText(string.Concat(Directory.GetCurrentDirectory(), "/../../../../OrderBooksSeed.json"));
+            string orderBooksDataStr = File.ReadAllText(string.Concat(Directory.GetCurrentDirectory(), "/AppData/OrderBooksSeed.json"));
             OrderBooksData = JsonSerializer.Deserialize<List<OrderBook>>(orderBooksDataStr);
 
             if (OrderBooksData is null || !OrderBooksData.Any())
