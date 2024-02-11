@@ -36,7 +36,7 @@ app.UseExceptionHandler(opt => { });
 if (app.Environment.IsProduction())
     app.UseHsts();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseForwardedHeaders(new ForwardedHeadersOptions
 {

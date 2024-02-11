@@ -196,6 +196,18 @@
 			"key": "btcSpyBaseUrl",
 			"value": "https://localhost:8081/",
 			"type": "string"
+		},
+		{
+			"key": "btcSpyBaseUrl",
+			"value": "http://localhost:8080/",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "btcSpyBaseUrl",
+			"value": "http://0.0.0.0:5000/",
+			"type": "string",
+			"disabled": true
 		}
 	]
 }
